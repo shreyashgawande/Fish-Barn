@@ -1,5 +1,5 @@
 # Project-2
-# Sparks Foundation - Basic Banking System
+#Fish Type Predictor
 
 ## Index
 - Description
