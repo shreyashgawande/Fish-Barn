@@ -44,7 +44,7 @@ node app.js
 
 - Open Browser Enter the following URL:
 ```
-http://localhost:5000
+http://localhost:3000
 ```
 ##Preview
 
