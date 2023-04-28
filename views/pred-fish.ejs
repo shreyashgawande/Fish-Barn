@@ -1,0 +1,63 @@
+<%-include("partials/header") -%>
+<div class=""class="" style="
+    margin: 2% 15%;
+    background: aquamarine;
+    border-radius: 10%;
+    border: 2px solid;
+">
+<div class="row"  style="
+    padding: 2% 5% 1% 5%;
+">
+  <div class="col">
+
+    <h1 style="
+    margin: 5% 6%;
+    background: white;
+    padding: 5%;
+    font-size: xxx-large;
+    font-weight: 700;
+">Predicted fish by our model</h1>
+  </div>
+
+</div>
+<div class="row"style="
+    color: black;
+">
+  <div class="col col-md-6 col-sm-12"  style="
+    padding: 5% 10%;
+    font-color: white;
+    /* border: 2px solid; */
+">
+
+   <div class="">
+
+
+    <h2> <%=fish.name %> </h2>
+
+    <p><b>Scientific Name :</b> <%= fish.scientificName %></p>
+    <p><b>Known as: </b><%= fish.knownAs %></p>
+    <p><b>Appearance: </b><%= fish.appearance%> </p>
+    <p><b>Habitat :</b> <%= fish.habitat %> </p>
+    <p><b>Diet: </b><%= fish.diet%></p>
+  </div>
+  </div>
+  <div class="col col-md-6 col-sm-12 col-12"style="
+    display: flex;
+    justify-content: right;
+    padding: 10%;
+">
+  <img class="card-img-top" src="data:image/image/png;base64,
+<%= fish.photo.toString('base64') %>" alt="<%=fish.name%> image"
+  style="
+    padding: 10%;
+    border: 2px solid;
+    background: white;
+    border-radius: 10%;
+">
+  </div>
+</div>
+
+
+</div>
+
+<%-include("animation") -%>

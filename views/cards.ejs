@@ -1,0 +1,33 @@
+<%-include("partials/header"); -%>
+<div class="">
+
+<h1>Fishes that our model can predict </h1>
+<div class="" style="margin:7%;background: #ECF9FF;">
+
+<div class="row">
+  <% foundFishes.forEach(function(fish){ %>
+    <div class="col col-lg-4 col-md-6 col-sm-12">
+      <div class="card fish-card" style="width: 18rem; border: 2px solid;   ">
+        <img class="card-img-top file-upload-image" src="data:image/image/png;base64,
+      <%= fish.photo.toString('base64') %>"  alt="Card image cap"
+    >
+        <div class="card-body">
+          <p><b>Name :</b> <%= fish.name %></p>
+          <p><b>Scientific Name :</b> <%= fish.scientificName %></p>
+          <p><b>Known as: </b><%= fish.knownAs %></p>
+          <p><b>Appearance: </b><%= fish.appearance.substring(0,30)%> <b>....</b> </p>
+          <p><b>Habitat :</b> <%= fish.habitat.substring(0,30)%> <b>....</b></p>
+          <!-- <p><b>Diet: </b><%= fish.diet.substring(0,30)%> <b>....</b></p> -->
+          <a href="/fish/<%=fish.idx%>" class="btn btn-primary ">Read More</a>
+        </div>
+      </div>
+    </div>
+  <% }); %>
+
+</div>
+
+</div>
+
+</div>
+
+<%-include("partials/footer"); -%>

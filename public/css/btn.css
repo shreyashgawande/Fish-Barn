@@ -1,0 +1,240 @@
+body{
+  justify-content: center;
+}
+h1{
+  margin: 2% 25%;
+}
+nav {
+    /* display: flex; */
+    /* justify-content: right; */
+    overflow: hidden;
+    background-color:rgba(200, 242, 250, 0.6);
+    margin-top: -0.5rem;
+}
+nav a{
+    /* margin-right: 7rem; */
+    font-size: 2rem;
+    padding: 1.2rem;
+    text-decoration: none;
+    /* display: block; */
+    color: rgb(128, 128, 128);
+}
+
+nav a:hover{
+    background-color: #adedfd;
+    color: black;
+    border-radius: 0.5rem;
+}
+/*using media queries to make it responsive  */
+
+@media only screen and (max-width : 200px) {
+    nav {
+ float:left;
+ }
+}
+
+/* form{
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlzaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:auto;
+    width: 100%;
+    margin-top: 1.5rem;
+    opacity: 90%;
+    font: 1rem/1.5 "PT Sans", Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+} */
+.file-upload {
+    background-color: #ffffff;
+    width: 600px;
+    margin: 7rem auto;
+    padding: 20px;
+  }
+
+  .file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #72d2f8;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7bdb2;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .file-upload-btn:hover {
+    background: #1a58a0;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+
+  .file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+
+  .file-upload-content {
+    display: none;
+    text-align: center;
+  }
+
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .image-upload-wrap {
+    margin-top: 20px;
+    border: 4px dashed #013238;
+    position: relative;
+  }
+
+  .image-dropping,
+  .image-upload-wrap:hover {
+    background-color: #dcf8fa;
+    border: 4px dashed #ffffff;
+  }
+
+  .image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+  }
+
+  .drag-text {
+    text-align: center;
+  }
+
+  .drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #7b8fff;
+    padding: 60px 0;
+  }
+
+  .file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .predict-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: ##72d2f8;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+   border-bottom: 4px solid #a7bdb2;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .predict-image:hover {
+    background: #013238;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  .remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+
+  .remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+form :before,
+form :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input{
+    margin-top: 20rem;
+    height:3rem;
+    text-align: center;
+}
+button{
+    /* height: auto; */
+    background-image: linear-gradient(to right, rgb(17, 233, 248),rgb(216, 227, 231));
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-right: 5rem;
+}
+.content-box{
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3rem;
+  margin-top: -2rem;
+  background-image: linear-gradient(to right,rgb(255, 255, 255),skyblue);
+  height:10rem;
+  width:auto;
+  text-align:center;
+}
+.content{
+  padding: 2.55rem;
+}
+.chart{
+  margin-top: 4rem;
+}
+.fish-card{
+  display: inline-flex;
+  margin: 15%;
+}
+
+/* footer */
+#footer{
+  background-color: #93BFCF;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 8%;
+  padding: 5%;
+
+}
+.copyright{
+  text-align:center;
+  margin-bottom: 0;
+
+}

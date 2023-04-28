@@ -1,0 +1,35 @@
+<%-include("partials/header"); -%>
+<div id="progress-bar">
+  <div class="progress progress-bar progress-bar-striped progress-bar-animated mb-2">
+    Model Loading
+  </div>
+</div>
+<div class="file-upload">
+    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+    <div class="image-upload-wrap">
+      <input class="file-upload-input" id="file_input" type='file' onchange="readURL(this);" accept="image/*" />
+      <div class="drag-text">
+        <h3>Drag and drop a file or select add Image</h3>
+      </div>
+    </div>
+    <div class="file-upload-content">
+      <img class="file-upload-image" src="#"  alt="your image" />
+      <img src="#" id="selected_image" alt="" style="display: none;">
+      <div class="image-title-wrap">
+        <button type="button" onclick="removeUpload()" class="remove-image ">Remove <span class="image-title">Uploaded Image</span></button>
+          <button type="button" id="predict-button" class="remove-image">select<span class="image-title">Uploaded Image</span></button>
+      </div>
+      <form class="" action="/api" method="post">
+        <input type="number" id="textField1" name="pred" style="display:none">
+        <button type="submit"class="predict-image" id="predict_btn"name="button">Predict</button>
+      </form>
+
+    </div>
+  </div>
+  <div class="content-box">
+    <div class="content">Fish prediction model with on 97% accuracy rate</div>
+  </div>
+
+<%-include("animation") -%>
+  <%-include("partials/footer"); -%>
