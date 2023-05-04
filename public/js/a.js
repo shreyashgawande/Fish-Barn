@@ -61,7 +61,7 @@ $('.image-upload-wrap').bind('dragover', function () {
 let model;
 (async function(){
 
-  model = await tf.loadLayersModel('http://localhost:3000/models/model.json');
+  model = await tf.loadLayersModel('https://fish-predictor.onrender.com/models/model.json');
   $('#progress-bar').hide();
   model.summary();
 })();
