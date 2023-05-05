@@ -1,17 +1,17 @@
 <%-include("partials/header"); -%>
 <div class="">
-
-<h1>Fishes that our model can predict </h1>
-<div class="" style="margin:7%;background: #ECF9FF;">
+<h1 style="text-align: center;">Fishes our Models can predict</h1>
+<h6 style="text-align: center;">Discover the variety of Fishes with our model</h6>
+<div class="" style="margin:1.5rem;background: #ECF9FF;">
 
 <div class="row">
   <% foundFishes.forEach(function(fish){ %>
-    <div class="col col-lg-4 col-md-6 col-sm-12">
+    <div class="col col-lg-4 col-md-4 col-sm-8">
       <div class="card fish-card" style="width: 18rem; border: 2px solid;   ">
         <img class="card-img-top file-upload-image" src="data:image/image/png;base64,
       <%= fish.photo.toString('base64') %>"  alt="Card image cap"
     >
-        <div class="card-body">
+        <div class="card-body " >
           <p><b>Name :</b> <%= fish.name %></p>
           <p><b>Scientific Name :</b> <%= fish.scientificName %></p>
           <p><b>Known as: </b><%= fish.knownAs %></p>
