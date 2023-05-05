@@ -13,17 +13,22 @@ nav {
 }
 nav a{
     /* margin-right: 7rem; */
-    font-size: 2rem;
-    padding: 1.2rem;
+    margin-bottom: -1rem;
+    font-size:2rem;
+    padding: 1.4rem;
+    padding-right: 4rem;
     text-decoration: none;
-    /* display: block; */
-    color: rgb(128, 128, 128);
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #070b2e;
+    /* background: -webkit-linear-gradient(rgb(6, 5, 32),rgb(2, 27, 27),rgb(1, 5, 36));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 nav a:hover{
-    background-color: #adedfd;
-    color: black;
-    border-radius: 0.5rem;
+    background-color: #090b25;
+    color: rgb(130, 247, 255);
+    border-radius: 0.8rem;
 }
 /*using media queries to make it responsive  */
 
@@ -53,14 +58,14 @@ nav a:hover{
 .file-upload {
     background-color: #ffffff;
     width: 600px;
-    margin: 7rem auto;
+    margin: 3rem auto;
     padding: 20px;
   }
 
   .file-upload-btn {
     width: 100%;
     margin: 0;
-    color: #fff;
+    color: #0d0b27;
     background: #72d2f8;
     border: none;
     padding: 10px;
@@ -73,7 +78,7 @@ nav a:hover{
   }
 
   .file-upload-btn:hover {
-    background: #1a58a0;
+    background: #061322;
     color: #ffffff;
     transition: all .2s ease;
     cursor: pointer;
@@ -139,11 +144,11 @@ nav a:hover{
     width: 200px;
     margin: 0;
     color: #fff;
-    background: #cd4535;
+    background: #04041a;
     border: none;
     padding: 10px;
     border-radius: 4px;
-    border-bottom: 4px solid #b02818;
+    border-bottom: 4px solid #6fcae6;
     transition: all .2s ease;
     outline: none;
     text-transform: uppercase;
@@ -153,11 +158,11 @@ nav a:hover{
     width: 200px;
     margin: 0;
     color: #fff;
-    background: ##72d2f8;
+    background: #07051a;
     border: none;
     padding: 10px;
     border-radius: 4px;
-   border-bottom: 4px solid #a7bdb2;
+   border-bottom: 4px solid #6edceb;
     transition: all .2s ease;
     outline: none;
     text-transform: uppercase;
@@ -171,8 +176,8 @@ nav a:hover{
     cursor: pointer;
   }
   .remove-image:hover {
-    background: #c13b2a;
-    color: #ffffff;
+    background: #58c7e9;
+    color: #070b2e;
     transition: all .2s ease;
     cursor: pointer;
   }
@@ -208,13 +213,18 @@ button{
   font-family: 'Roboto Slab', serif;
   font-size: 3rem;
   margin-top: -2rem;
-  background-image: linear-gradient(to right,rgb(255, 255, 255),skyblue);
+  background-image: linear-gradient(to right,rgb(8, 9, 37),rgb(15, 13, 126));
   height:10rem;
   width:auto;
   text-align:center;
 }
 .content{
+
   padding: 2.55rem;
+  background: -webkit-linear-gradient(rgb(6, 5, 32),rgb(24, 211, 170),rgb(101, 209, 252));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 .chart{
   margin-top: 4rem;
@@ -229,12 +239,11 @@ button{
   background-color: #93BFCF;
   text-align: center;
   margin-bottom: 0;
-  margin-top: 8%;
-  padding: 5%;
+  margin-top:1rem;
+  padding:1.5rem;
 
 }
 .copyright{
   text-align:center;
   margin-bottom: 0;
-
 }
