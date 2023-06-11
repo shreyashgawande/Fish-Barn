@@ -47,7 +47,7 @@ app.post('/api',function(req,res){
     if(!err){
       if(foundFish){
         fishFound=foundFish;
-        console.log(foundFish);
+//         console.log(foundFish);
         res.render("pred-fish",{fish:fishFound});
 
       }
