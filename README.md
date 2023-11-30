@@ -1,5 +1,5 @@
 # Project-2
-# Fish Type Predictor
+# Fish Type Predictor (Fish Barn)
 
 ## Index
 - Description
