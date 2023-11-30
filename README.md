@@ -8,9 +8,9 @@
 - Preview
 
 ## Description
-- This a Internship project by Sparks Foundation.
+- This a Group project by Our Group [Me, Aarohi Bhand, Swaraj Deshmane,Pranjal Bharsakle].
 - This project is built on HTML/CSS, Bootstrap, Node Js,Ejs and MongoDB.
-- Details of Customers are maintained as `Name`,`Account No`, `Email`, `Amount` are fields.
+- Details of Fish are maintained as `Name`,`Local Name`, `Habitat`, `Nutrition`,etc are fields.
 
 ## First_Time_Installation
 - Clone the Repository.
@@ -22,7 +22,7 @@
 cd Desktop/
 ```
 ```
-cd SP-Bank/
+cd Project-2/
 ```
 
 - run folllowing commmand to install required dependencies
@@ -47,6 +47,15 @@ node app.js
 http://localhost:3000
 ```
 ##Preview
+
+Link to the Project : https://fish-predictor.onrender.com/
+(make sure you open in desktop mode)
+
+![image](https://github.com/shreyashgawande/Project-2/assets/110779597/a308f9d5-d8f1-4cf6-a709-19a50e99c2fe)
+![image](https://github.com/shreyashgawande/Project-2/assets/110779597/28b6b4ba-2721-4331-a6c8-2a32defa7649)
+![image](https://github.com/shreyashgawande/Project-2/assets/110779597/4227e7d0-51fa-4e61-b1da-51eca5bda262)
+
+
 
 
  
