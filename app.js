@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 // const pass = process.env.ABC;
 // console.log(pass);
 // mongoose.connect("mongodb://127.0.0.1:27017/fish",{useNewUrlParser:true});
-const connection_string = process.env.CONNECTION_STRING
+const connection_string = process.env.CONNECTION_STRING;
+console.log(connection_string);
 mongoose.connect(connection_string);
 const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
