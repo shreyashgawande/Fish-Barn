@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 // const pass = process.env.ABC;
 // console.log(pass);
 // mongoose.connect("mongodb://127.0.0.1:27017/fish",{useNewUrlParser:true});
-mongoose.connect("mongodb+srv://Shreyashgawande:Shreyash8902@cluster0.tswvk28.mongodb.net/fish");
+mongoose.connect(process.env.CONNECTION_STRING);
 const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
