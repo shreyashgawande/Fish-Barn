@@ -11,14 +11,14 @@
         <img class="card-img-top file-upload-image" src="data:image/image/png;base64,
       <%= fish.photo.toString('base64') %>"  alt="Card image cap"
     >
-        <div class="card-body " >
+        <div class="card-body d-flex flex-column " >
           <p><b>Name :</b> <%= fish.name %></p>
           <p><b>Scientific Name :</b> <%= fish.scientificName %></p>
           <p><b>Known as: </b><%= fish.knownAs %></p>
           <p><b>Appearance: </b><%= fish.appearance.substring(0,30)%> <b>....</b> </p>
           <p><b>Habitat :</b> <%= fish.habitat.substring(0,30)%> <b>....</b></p>
           <!-- <p><b>Diet: </b><%= fish.diet.substring(0,30)%> <b>....</b></p> -->
-          <a href="/fish/<%=fish.idx%>" class="btn btn-primary ">Read More</a>
+          <a href="/fish/<%=fish.idx%>" class="btn btn-primary mt-auto ">Read More</a>
         </div>
       </div>
     </div>
