@@ -14,14 +14,14 @@
 ## First_Time_Installation
 - Clone the Repository.
 - Make sure you have installed node and mongodb on your computer.
-- Copy this folder(Project-2) to Desktop folder.
+- Copy this folder(Fish-Barn) to Desktop folder.
 -open terminal
 -run following commands :
 ```
 cd Desktop/
 ```
 ```
-cd Project-2/
+cd Fish-Barn/
 ```
 
 - run folllowing commmand to install required dependencies
@@ -45,7 +45,7 @@ node app.js
 ```
 http://localhost:3000
 ```
-##Preview
+## Preview
 
 Link to the Project : https://fish-predictor.onrender.com/
 (make sure you open in desktop mode)
